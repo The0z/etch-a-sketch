@@ -1,3 +1,31 @@
 body {
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(221, 32, 32);
+}
+
+#content {
+    flex: 1 1 0; /*Allows grid to grow */
+    max-width: 100%; /* Prevents Overflow */ 
+    aspect-ratio: 1/1; /* height to be same as width */
+
+}
+
+#gridDiv {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(16, 1fr [col-start]);
+    grid-template-rows: repeat(16, 1fr [row-start]);
+    background-color: white;
+
+}
+
+.gridSquare {
+    aspect-ratio: 1/1;
 }
