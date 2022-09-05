@@ -26,7 +26,7 @@ divGridCreator(32);
 document.querySelector('#content').addEventListener('mouseover', function(e){
     if(e.target){
         if(e.target.classList.contains('gridSquare')){
-            e.target.classList.add('etchColor');
+            e.target.style.backgroundColor = "black";
         }
     }
 } );
@@ -35,7 +35,7 @@ document.querySelector('#resetBtn').addEventListener('click', resetGame);
 document.querySelector('#gridBtn').addEventListener('click', resizeGrid);
 
 function resetGame(){
-    Array.from(document.querySelectorAll('.gridSquare')).forEach((e) => e.classList.remove('etchColor'));
+    Array.from(document.querySelectorAll('.gridSquare')).forEach((e) => e.style = 'white');
 }
 
 function resizeGrid(){
