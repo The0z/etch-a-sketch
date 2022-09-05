@@ -19,7 +19,7 @@ function divGridCreator (gridLength){
 
 }
 
-divGridCreator(32);
+divGridCreator(16);
 
 //Grid Hover Event Listener - change grid square color when mouseover occurs.
 document.querySelector('#content').addEventListener('mouseover', function(e){
@@ -56,7 +56,7 @@ function resizeGrid(){
     if (gridLength <= 100 && gridLength > 0){
         divGridCreator(gridLength);
     } else { //default size
-        alert("INVALID SIZE! Grid Length Set to 32");
-        divGridCreator(32);
+        alert("INVALID SIZE! Grid Length Set to 16");
+        divGridCreator(16);
     }
 }
