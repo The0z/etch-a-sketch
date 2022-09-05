@@ -46,6 +46,7 @@ button {
 .gridSquare {
     aspect-ratio: 1/1;
     background-color: white;
+    opacity: 0;
 }
 
 .etchColor {

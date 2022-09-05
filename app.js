@@ -11,7 +11,7 @@ function divGridCreator (gridLength){
     for (let i = 1; i <= gridSize; i++){
         const gridBox = document.createElement('div');
     
-        gridBox.setAttribute('background-color', 'red');
+        //gridBox.setAttribute('background-color', 'red');
         gridBox.classList.add('gridSquare');
         gridBox.setAttribute('id',`grid${i}`);
         gridDiv.appendChild(gridBox);
@@ -27,6 +27,12 @@ document.querySelector('#content').addEventListener('mouseover', function(e){
     if(e.target){
         if(e.target.classList.contains('gridSquare')){
             e.target.style.backgroundColor = "black";
+            if(e.target.style.opacity === ""){
+                e.target.style.opacity = 0.1;
+            } else if(parseInt(e.target.style.opacity) < 1){
+                e.target.style.opacity = parseFloat(e.target.style.opacity) + 0.1;
+            }
+
         }
     }
 } );
