@@ -37,10 +37,10 @@ button {
 #gridDiv {
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: repeat(16, 1fr [col-start]);
-    grid-template-rows: repeat(16, 1fr [row-start]);
-    background-color: white;
-
+    /* grid-template-columns: repeat(16, 1fr [col-start]);
+    grid-template-rows: repeat(16, 1fr [row-start]); */
+    background-color: transparent;
+    gap: 0 0;
 }
 
 .gridSquare {

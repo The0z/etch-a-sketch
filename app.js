@@ -4,8 +4,10 @@ function divGridCreator (gridLength){
     let gridSize = gridLength*gridLength;
 
     gridDiv.setAttribute('id', 'gridDiv'); 
+    gridDiv.style.gridTemplateColumns = `repeat(${gridLength}, 1fr [col-start])`;
+    gridDiv.style.gridTemplateRows = `repeat(${gridLength}, 1fr [row-start])`;
 
-    //16x16 grid
+    //Grid Maker
     for (let i = 1; i <= gridSize; i++){
         const gridBox = document.createElement('div');
     
@@ -18,7 +20,7 @@ function divGridCreator (gridLength){
 
 }
 
-divGridCreator(16);
+divGridCreator(32);
 
 //Div Hover Event Listener
 document.querySelector('#content').addEventListener('mouseover', function(e){
