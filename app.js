@@ -1,5 +1,5 @@
 function div16GridCreator (){
-    const body = document.querySelector('#content');
+    const content = document.querySelector('#content');
     const gridDiv = document.createElement('div');
 
     gridDiv.setAttribute('id', 'gridDiv'); 
@@ -13,8 +13,21 @@ function div16GridCreator (){
         gridBox.setAttribute('id',`grid${i}`);
         gridDiv.appendChild(gridBox);
     }
-    body.appendChild(gridDiv);
+    content.appendChild(gridDiv);
 
 }
+
+//Div Hover Event Listener
+document.querySelector('#content').addEventListener('onmouseover', function(e){
+    console.log('test');
+    if(e.target){
+        if(e.target.classList.contains('gridSquare')){
+            e.target.classList.add('etchColor');
+        }
+    
+    }
+})
+
+
 
 div16GridCreator();

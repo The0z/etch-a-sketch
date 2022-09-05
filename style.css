@@ -29,3 +29,7 @@ body {
 .gridSquare {
     aspect-ratio: 1/1;
 }
+
+.etchColor {
+    background-color: black;
+}
