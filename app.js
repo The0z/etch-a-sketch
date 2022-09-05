@@ -1,13 +1,12 @@
-let gridSize = 16;
-
-function div16GridCreator (){
+function divGridCreator (gridLength){
     const content = document.querySelector('#content');
     const gridDiv = document.createElement('div');
+    let gridSize = gridLength*gridLength;
 
     gridDiv.setAttribute('id', 'gridDiv'); 
 
     //16x16 grid
-    for (let i = 1; i <= 256; i++){
+    for (let i = 1; i <= gridSize; i++){
         const gridBox = document.createElement('div');
     
         gridBox.setAttribute('background-color', 'red');
@@ -19,7 +18,7 @@ function div16GridCreator (){
 
 }
 
-div16GridCreator();
+divGridCreator(16);
 
 //Div Hover Event Listener
 document.querySelector('#content').addEventListener('mouseover', function(e){
