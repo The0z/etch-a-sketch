@@ -17,17 +17,13 @@ function div16GridCreator (){
 
 }
 
+div16GridCreator();
+
 //Div Hover Event Listener
-document.querySelector('#content').addEventListener('onmouseover', function(e){
-    console.log('test');
+document.querySelector('#content').addEventListener('click', function(e){
     if(e.target){
         if(e.target.classList.contains('gridSquare')){
             e.target.classList.add('etchColor');
         }
-    
     }
-})
-
-
-
-div16GridCreator();
+} );
