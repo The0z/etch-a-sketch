@@ -20,7 +20,7 @@ function div16GridCreator (){
 div16GridCreator();
 
 //Div Hover Event Listener
-document.querySelector('#content').addEventListener('click', function(e){
+document.querySelector('#content').addEventListener('mouseover', function(e){
     if(e.target){
         if(e.target.classList.contains('gridSquare')){
             e.target.classList.add('etchColor');
