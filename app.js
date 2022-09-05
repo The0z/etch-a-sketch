@@ -1,3 +1,5 @@
+let gridSize = 16;
+
 function div16GridCreator (){
     const content = document.querySelector('#content');
     const gridDiv = document.createElement('div');
@@ -27,3 +29,9 @@ document.querySelector('#content').addEventListener('mouseover', function(e){
         }
     }
 } );
+
+document.querySelector('#resetBtn').addEventListener('click', resetGame);
+
+function resetGame(){
+    Array.from(document.querySelectorAll('.gridSquare')).forEach((e) => e.classList.remove('etchColor'));
+}
