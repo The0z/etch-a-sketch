@@ -1,2 +1,4 @@
 # etch-a-sketch
-16x16 Grid Etch-a-sketch
+
+Etch-a-sketch with customizable canvas side and several levels of opacity
+Check it out: 
