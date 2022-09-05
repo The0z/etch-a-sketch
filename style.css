@@ -10,11 +10,28 @@ body {
     background-color: rgb(221, 32, 32);
 }
 
+button {
+    width: 15%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#hero{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+}
+
+#header{
+    flex-grow: 1;
+    text-align: center;
+}
+
 #content {
     flex: 1 1 0; /*Allows grid to grow */
     max-width: 100%; /* Prevents Overflow */ 
     aspect-ratio: 1/1; /* height to be same as width */
-
+    
 }
 
 #gridDiv {
@@ -33,3 +50,13 @@ body {
 .etchColor {
     background-color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    #header{
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 0.5rem;
+    }
+}
+    
