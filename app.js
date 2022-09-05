@@ -28,9 +28,9 @@ document.querySelector('#content').addEventListener('mouseover', function(e){
         if(e.target.classList.contains('gridSquare')){
             e.target.style.backgroundColor = "black";
             if(e.target.style.opacity === ""){
-                e.target.style.opacity = 0.1;
+                e.target.style.opacity = 0.2;
             } else if(parseInt(e.target.style.opacity) < 1){
-                e.target.style.opacity = parseFloat(e.target.style.opacity) + 0.1;
+                e.target.style.opacity = parseFloat(e.target.style.opacity) + 0.2;
             }
 
         }
